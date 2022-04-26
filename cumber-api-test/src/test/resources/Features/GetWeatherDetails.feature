@@ -1,9 +1,9 @@
 Feature: Title of your feature
   Get weather deails for different cities
   
-  As a user , I want submit post request 
-  for different city set and want check 
-  the behaviour wheather details
+  As a user , I want to submit get request 
+  for different city and want to check 
+  the wheather details
 
   Scenario Outline: Get Weather Details
     Given I setup base url
@@ -11,5 +11,7 @@ Feature: Title of your feature
     Then I should get response status code <status>
 
     Examples: 
-      | status | city   |
-      |    200 | london |
+      | status | city   				|
+      |    200 | london 				|
+      |    200 | San Francisco 	|
+      |    200 | Busan 					|
