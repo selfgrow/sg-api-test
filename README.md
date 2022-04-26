@@ -1,1 +1,1 @@
-# sg-api-test
+# API test using rest assured and cucumber
