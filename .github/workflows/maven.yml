@@ -28,6 +28,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: install json-server
       run: npm i -g json-server && json-server --version
+    - name: run json-server for api test
+      run: json-server ./cumber-api-test/db.json &
     - name: Build with Maven
       run: mvn -B package --file ./cumber-api-test/pom.xml
     - name: Deploy 🚀
