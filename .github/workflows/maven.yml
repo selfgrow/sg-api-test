@@ -29,7 +29,7 @@ jobs:
     - name: install json-server
       run: npm i -g json-server && json-server --version
     - name: run json-server for api test
-      run: nohup json-server ./cumber-api-test/db.json
+      run: nohup json-server ./cumber-api-test/db.json &
     - name: get employee vlaue using curl http://localhost:3000/employees
       run: curl http://localhost:3000/employees
     - name: Build with Maven
