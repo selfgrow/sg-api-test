@@ -26,6 +26,8 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+    - name: install json-server
+      run: npm i -g json-server
     - name: Build with Maven
       run: mvn -B package --file ./cumber-api-test/pom.xml
     - name: Deploy 🚀
